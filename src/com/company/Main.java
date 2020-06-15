@@ -1,15 +1,18 @@
 package com.company;
 
+import com.company.easy.Palindrome;
+import com.company.easy.ReverseInt;
+
 import java.util.HashMap;
 
 public class Main {
 
     public static void main(String[] args) {
-        Main main = new Main();
-
-        int[] nums = {0,2,4,5,9};
-        int target = 9;
-        main.twoSum(nums, target);
+        Palindrome palindrome = new Palindrome();
+        ReverseInt reverseInt = new ReverseInt();
+        int x = 10;
+        System.out.println(palindrome.isPalindrome(x));;
+        System.out.println(reverseInt.reverse(x));
     }
 
     //暴力搜索，时间复杂度n*n，空间复杂度1
